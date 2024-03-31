@@ -5,6 +5,9 @@ models:
     description: Dimension table for addresses on the platform.  
     columns:
       - name: address_id
+        tests:
+          - not_null
+          - unique
       - name: address
       - name: zipcode
       - name: state 
@@ -30,6 +33,9 @@ models:
     description: A fact table of orders that occured on the site. Includes information regarding cost and shipping details.    
     columns:
       - name: order_id
+        tests:
+          - not_null
+          - unique
       - name: user_id
       - name: promo_id
       - name: address_id 
@@ -48,6 +54,8 @@ models:
       - name: product_id
       - name: name
       - name: price
+        tests:
+          - positive_values
       - name: inventory 
   - name: stg_postgres__promos
     description: A dimension table for the various promos, their discount amount and status.     

@@ -1,0 +1,28 @@
+version: 2
+
+models:
+ - name: fct_page_views
+   description: Fact table for page views
+   columns:
+     - name: event_id
+     - name: session_id
+     - name: user_id 
+     - name: page_url 
+     - name: created_at 
+     - name: event_type 
+     - name: OrderFlag
+     - name: first_name
+     - name: last_name
+     - name: email
+     - name: phone_number
+     - name: address_id
+     - name: order_id
+     - name: promo_id
+     - name: order_created_at
+     - name: order_cost
+       tests:
+          - positive_values
+     - name: shipping_cost
+     - name: order_total
+     - name: tracking_id
+     - name: status

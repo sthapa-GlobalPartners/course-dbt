@@ -1,0 +1,40 @@
+version: 2
+
+models:
+   - name: dim_products
+     description: Dimension table for products, which were ordered
+     columns:
+     - name: product_id 
+       tests:
+          - not_null
+          - unique:
+              config:
+                warn_if: ">=10"
+                error_if: ">=20"
+     - name: name 
+     - name: price
+       tests:
+          - positive_values
+     - name: inventory
+     - name: order_id
+     - name: user_id
+
+   - name: dim_users
+     description: Dimension table for dim_users
+     columns:
+     - name: user_id
+       tests:
+          - not_null
+          - unique
+     - name: first_name
+     - name: last_name
+     - name: email
+     - name: phone_number
+     - name: created_at
+     - name: updated_at
+     - name: address_id
+     - name: address 
+     - name: zipcode
+     - name: state
+     - name: country
+

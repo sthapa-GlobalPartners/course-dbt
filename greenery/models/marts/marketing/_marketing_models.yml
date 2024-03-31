@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fct_user_orders
+    description: Fact table for user orders
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: first_name 
+      - name: last_name
+      - name: email
+      - name: phone_number
+      - name: created_at 
+      - name: updated_at 
+      - name: address_id 
+      - name: address 
+      - name: zipcode 
+      - name: state 
+      - name: country
+      - name: ordercount 
+      - name: first_order_created_at
+      - name: last_order__created_at
+      - name: totalspend
+
+    
