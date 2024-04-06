@@ -104,3 +104,23 @@ ZZ Plant	0.539683
 Birds Nest Fern	0.423077
 Cactus	0.545455
 Calathea Makoyana	0.509434
+
+
+
+Question3:
+
+
+Which products had their inventory change from week 2 to week 3? 
+
+
+
+Pothos
+Philodendron
+Monstera
+String of pearls
+Monstera
+Philodendron
+Pothos
+String of pearls
+Bamboo
+ZZ Plant
