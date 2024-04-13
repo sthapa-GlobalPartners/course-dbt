@@ -26,3 +26,12 @@ models:
      - name: order_total
      - name: tracking_id
      - name: status
+
+     
+ - name: fct_product_funnel
+   columns:
+     - name: session_id
+     - name: page_views
+     - name: add_to_cart
+     - name: checkout
+     - name: package_shipped

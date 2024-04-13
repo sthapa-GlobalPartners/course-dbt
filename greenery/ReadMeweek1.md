@@ -1,6 +1,6 @@
 How many users do we have?
 130
-
+```
 select count(user_id) from DEV_DB.DBT_SIRJANATHAPAGLOBALPCOM.STG_POSTGRES_USERS
 
 On average, how many orders do we receive per hour?
@@ -13,7 +13,7 @@ group by day(created_at), hour(created_at))
 
 select avg(count)
 from dailyhourlyorder
-
+```
 On average, how long does an order take from being placed to being delivered?
 3.89
 
