@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+
+  - name: Product_funnel
+    label: Event_type
+    type: dashboard
+    maturity: high
+    url: https://app.sigmacomputing.com/corise-dbt/f/corise-dbt-0000000000000000
+    description: >
+      Product funnel by event types.
+
+    depends_on:
+      - ref('stg_postgres_events')
+
+
+    owner:
+      name: Sirjana Thapa Rana
+      email: Sirjana.thapa@globalp.com
